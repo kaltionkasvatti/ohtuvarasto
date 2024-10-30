@@ -12,14 +12,14 @@ class TestVarasto(unittest.TestCase):
         # https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertAlmostEqual
         self.assertAlmostEqual(self.varasto.saldo, 0)
     
-    def test_konstruktori_nollaa_virheellisen_koon():
+    def test_konstruktori_nollaa_virheellisen_koon(self):
         self.assertAlmostEqual(self.negvarasto.tilavuus, 0)
     
     def test_konstruktori_nollaa_virheellisen_saldon(self):
-        self.assertAlmostEquals(self.negvarasto.saldo, 0)
+        self.assertAlmostEqual(self.negvarasto.saldo, 0)
 
     def test_uudella_varastolla_oikea_tilavuus(self):
-        self.assertAlmostEqual(self.varasto.tilavuus. 10)
+        self.assertAlmostEqual(self.varasto.tilavuus, 10)
 
     def test_lisays_lisaa_saldoa(self):
         self.varasto.lisaa_varastoon(8)
